@@ -5,7 +5,7 @@ var cheerio = require('cheerio');
 var app = express();
 
 app.get('/scrape', function (req, res) {
-    // Let's scrape Anchorman 2
+    // Let's scrape Usual Suspects
     url = 'http://www.imdb.com/title/tt0114814/';
 
     request(url, function (error, response, html) {
