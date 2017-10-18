@@ -1,0 +1,16 @@
+{
+    "name": "web-scraper-dk",
+    "version": "0.0.1",
+    "description": "scrape n scrape",
+    "main": "server.js",
+    "author": "danny",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danleekim/web-scraper.git"
+    },
+    "dependencies": {
+        "express": "latest",
+        "request": "latest",
+        "cheerio": "latest"
+    }
+}
