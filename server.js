@@ -5,8 +5,13 @@ var cheerio = require('cheerio');
 var app = express();
 
 app.get('/scrape', function (req, res) {
-    // Let's scrape Usual Suspectsgit s
-    url = 'http://www.imdb.com/title/tt0114814/';
+    
+    // Superbabies: Baby Geniuses 2 (2004)
+    url = 'http://www.imdb.com/title/tt0270846/';
+    
+    // Birdemic: Shock and Terror (2010)
+    url = 'http://www.imdb.com/title/tt1316037/';
+    // url = 'http://www.nba.com/lakers/roster';
 
     request(url, function (error, response, html) {
         if (!error) {
@@ -18,6 +23,27 @@ app.get('/scrape', function (req, res) {
                 release: "",
                 rating: ""
             };
+
+            var name;
+            var json = {
+                name: "",
+                release: "",
+                rating: ""
+            };
+
+            // $('.nba-player-header__details-bottom').filter(function () {
+            //     var data = $(this);
+            //     name = data.children().first().text().trim();
+            //     json.name = name;
+            // })
+
+            // $('.nba-player-header__details-bottom').filter(function () {
+            //     var data = $(this);
+            //     // name = data.children().first().text().trim();
+            //     name = data.children().first().text().trim();
+            //     json.name = name;
+            // })
+
 
             $('.title_wrapper').filter(function () {
                 var data = $(this);

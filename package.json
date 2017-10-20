@@ -1,7 +1,7 @@
 {
     "name": "web-scraper-dk",
     "version": "0.0.1",
-    "description": "scrape n scrape",
+    "description": "Scrapes imdb for movie for title, year, and rating",
     "main": "server.js",
     "author": "danny",
     "repository": {
